@@ -1,0 +1,322 @@
+body {
+    --violet: #ee82ee;
+    --yellow: #eeee82;
+    --bluesky: #82eeee;
+    --coral: #ee8282;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: end;
+    box-shadow: 0 2px var(--yellow);
+
+    background-color: var(--violet);
+    color: var(--yellow);
+}
+
+.navbar a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    height: 100%;
+    margin: -0.5rem 0;
+
+    color: var(--yellow);
+}
+
+.navbar a:hover {
+    background-color: #8282ee;
+}
+
+.navbar a div {
+    margin: 1rem 1.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar a {
+        font-size: 1.625rem;
+    }
+} 
+
+@media only screen and (max-width: 992px) {
+
+    .navbar a div {
+        margin: 0.875rem 1.375rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+    }
+} 
+
+.welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--bluesky);
+    color: var(--coral);
+}
+
+.welcome-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 2.25rem;
+
+    color: var(--violet);
+}
+
+.welcome-section p:nth-child(3) {
+    font-size: 2rem;
+    margin-top: -1.125rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .welcome-section h1 {
+        font-size: 3.875rem;
+    }
+
+    .welcome-section p:nth-child(2) {
+        font-size: 2.125rem;
+    }
+
+    .welcome-section p:nth-child(3) {
+        font-size: 1.875rem;
+        margin-top: -1rem;
+    }
+} 
+
+@media only screen and (max-width: 992px) {
+    .welcome-section h1 {
+        font-size: 3.75rem;
+    }
+
+    .welcome-section p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    .welcome-section p:nth-child(3) {
+        font-size: 1.75rem;
+        margin-top: -0.875rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-section h1 {
+        font-size: 3.625rem;
+    }
+
+    .welcome-section p:nth-child(2) {
+        font-size: 1.875rem;
+    }
+
+    .welcome-section p:nth-child(3) {
+        font-size: 1.625rem;
+        margin-top: -0.75rem;
+    }
+} 
+
+.projects-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1rem 6rem;
+
+    background-color: #8282ee;
+}
+
+.projects-section h2 {
+    max-width: 600px;
+    padding: 0.25rem 1rem;
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid;
+
+    color: var(--yellow);
+}
+
+.projects-section .projects-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 3rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.projects-section .projects-grid .project-tile {
+    text-align: center;
+
+    background-color: var(--bluesky);
+    color: var(--coral);
+}
+
+.projects-section .projects-grid .project-img {
+    height: calc(100% - 4.25rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects-section .projects-grid .project-name {
+    font-size: 1.5rem;
+}
+
+.projects-section .projects-grid .project-name p {
+    margin: 1rem auto;
+}
+
+.projects-section .projects-grid .project-name .hover {
+    color: var(--bluesky);
+}
+
+.projects-section .projects-grid a:hover .project-name .hover {
+    color: #8282ee;
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects-section h2 {
+        font-size: 2.375rem;
+    }
+
+    .projects-section .projects-grid .project-img {
+        height: calc(100% - 4.125rem);
+    }
+
+    .projects-section .projects-grid .project-name {
+        font-size: 1.375rem;
+    }
+} 
+
+@media only screen and (max-width: 992px) {
+    .projects-section h2 {
+        font-size: 2.25rem;
+    }
+
+    .projects-section>div:first-child {
+        margin: 2.875rem 0;
+    }
+
+    .projects-section .projects-grid .project-img {
+        height: calc(100% - 3.875rem);
+    }
+
+    .projects-section .projects-grid .project-name p {
+        margin: 0.875rem auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projects-section h2 {
+        font-size: 2.125rem;
+    }
+
+    .projects-section .projects-grid .project-img {
+        height: calc(100% - 3.75rem);
+    }
+
+    .projects-section .projects-grid .project-name {
+        font-size: 1.25rem;
+    }
+} 
+
+.contact-section {
+    height: 85vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: var(--bluesky);
+    color: var(--coral);
+}
+
+.contact-section .contact-section-title p {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.contact-section .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;    
+}
+
+.contact-section .contact-links .contact-details:hover {
+    transform: translateY(8px);
+}
+
+.contact-section .contact-links .contact-details {
+    font-size: 1.5rem;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    
+    color: var(--violet);
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact-section .contact-section-title p {
+        font-size: 3.875rem;
+    }
+} 
+
+@media only screen and (max-width: 992px) {
+    .contact-section .contact-section-title p {
+        font-size: 3.75rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-section .contact-section-title p {
+        font-size: 3.625rem;
+    }
+} 
+
+footer {
+    font-size: 1.385rem;
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid var(--violet);
+
+    background-color: var(--bluesky);
+    color: var(--coral);
+}
+
+footer > p {
+    margin: 1rem;
+}
+
+footer a:visited {
+    color: var(--coral);
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 1.25rem;
+        border-top: 3px solid var(--violet);
+    }
+} 

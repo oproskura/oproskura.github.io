@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="//db.onlinewebfonts.com/c/29a31a08b71c4aa8a1cbd68ba760c7b4?family=League+Gothic"
+    type="text/css" />
+
+  <title>FCC: Survey Form</title>
+</head>
+
+<body class="bg">
+  <div>
+    <div>
+      <h1 id="title" class="text-center">Claymore Survey Form</h1>
+      <p id="description" class="text-center">Thank you for taking the time to help us improve The Organization
+      </p>
+    </div>
+
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" class="form-control" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="form-control" type="email" name="email" placeholder="Enter your Email" required>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Number</label>
+          <input id="number" class="form-control" type="number" name="number" placeholder="Enter your number" min="1"
+            max="47">
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select class="form-control" id="dropdown" name="role" required>
+            <option disabled selected value="">Select current role</option>
+            <option value="trainee">Trainee</option>
+            <option value="job">Full Time Job</option>
+            <option value="awakened">Awakened Being</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend the Organization to a friend?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recommend" id="radio1" value="definitely" checked>
+            <label class="form-check-label" for="radio1">
+              Definitely
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recommend" id="radio2" value="maybe">
+            <label class="form-check-label" for="radio2">
+              Maybe
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recommend" id="radio3" value="not sure">
+            <label class="form-check-label" for="radio3">
+              Not sure
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recommend" id="radio4" value="never">
+            <label class="form-check-label" for="radio4">
+              Never
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite feature of the Organization?</p>
+          <select class="form-control" id="most-like" name="mostLike" required>
+            <option disabled selected value="">Select an option</option>
+            <option value="yoma">Yoma hunting</option>
+            <option value="awakenedhun">Awakened hunting</option>
+            <option value="claymore">Claymore hunting</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>What would you like to see improved? <small>(Check all that apply)</small></p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="training" id="improved1">
+            <label class="form-check-label" for="improved1">
+              Joint training of Claymores
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="comunication" id="improved2">
+            <label class="form-check-label" for="improved2">
+              Comunication with the Organization
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="comunication" id="improved3">
+            <label class="form-check-label" for="improved3">
+              Transparency of the procedure for assigning mission
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Any comments or suggestions?</label>
+          <textarea class="form-control" id="comments" name="comment" rows="3"
+            placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button id="submit" type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <style>
+    .bg {
+      background-image: url("https://images.alphacoders.com/820/thumb-1920-82003.jpg");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      padding: 10px;
+      border-radius: 10px;
+      background-color: rgba(200, 200, 200, 0.7);
+    }
+
+    @import url(//db.onlinewebfonts.com/c/29a31a08b71c4aa8a1cbd68ba760c7b4?family=League+Gothic);
+
+    @font-face {
+      font-family: "League Gothic";
+      src: url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.eot");
+      src: url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.woff") format("woff"), url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/29a31a08b71c4aa8a1cbd68ba760c7b4.svg#League Gothic") format("svg");
+    }
+
+    #title {
+      font-family: "League Gothic";
+      font-weight: 400;
+      font-size: 3.5rem;
+    }
+
+    #title,
+    #description {
+      color: #fff;
+    }
+  </style>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
